@@ -161,7 +161,6 @@ xkb_symbols "oss_sundeadkeys" {
 
     name[Group1]="Belgian (alt., with Sun dead keys)";
 };
-az
 
 partial alphanumeric_keys
 xkb_symbols "iso-alternate" {
@@ -245,6 +244,17 @@ xkb_symbols "applemagic" {
     include "be(basic)"
     name[Group1]="Belgisch (Apple Magic Keyboard)";
 
-    key <LCTL>  { [ Super_L                                                ] };
-    key <LWIN> {  [ Control_L                                              ] };
+    key <TLDE> { [ at,      numbersign    ]	};
+    key <AE05>	{ [ parenleft,      5,      braceleft,      bracketleft     ]	};
+    key <AE11>	{ [parenright,     degree,    braceright, bracketright ]	};
+    key <AB09>	{ [     colon,      slash, division,   backslash ]	};
+    key <LCTL>  { [ Meta_L                                                 ] };
+    key <LWIN> {  [ Control_L                                               ] };
+    modifier_map Control { <LWIN> };
+    modifier_map Mod3 { <LCTL> };
+    key <LALT> {
+      type[Group1]="ONE_LEVEL",
+      symbols[Group1] = [ ISO_Level3_Shift ]
+    };
+    include "level3(modifier_mapping)"
 };
