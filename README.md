@@ -1,3 +1,9 @@
+# Belgian Apple azerty keyboard layout settings for linux
+
+Fixes all keys I need when developing on a macbook pro running linux...
+Also moves command and ctrl to behave similar to osx keybindings.
+
+
 # Usage
 
 Add new variant to evdev.xml
@@ -12,7 +18,7 @@ Add new variant to evdev.xml
     </variant>
         
 
-Append last part from BE file to /usr/share/X11/xkb/symbols/be
+Append bottom part from BE file (below commented line) to /usr/share/X11/xkb/symbols/be
 
     sudo nano /usr/share/X11/xkb/symbols/be
 
@@ -28,4 +34,3 @@ Show pressed key code:
    xev
 
 Search for keycode by finding matching code in /usr/share/X11/xkb/keycodes/evdev
-   

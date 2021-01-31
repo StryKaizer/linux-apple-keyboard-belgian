@@ -237,7 +237,7 @@ partial alphanumeric_keys
 	include "sun_vndr/be(sun_type6)"
 };
 
-### ADDED PART, IF YOU WANT TO APPEND, COPY PASTE EVERYTHING BELOW.
+### ADDED PART FOR APPLE LAYOUT, IF YOU WANT TO APPEND, COPY PASTE EVERYTHING BELOW.
 
 partial alphanumeric_keys
 xkb_symbols "applemagic" {
@@ -247,7 +247,10 @@ xkb_symbols "applemagic" {
 
     key <LSGT> { [ at,      numbersign    ]	};
     key <TLDE> { [ less,      greater    ]	};
+    key <BKSL>	{ [ egrave,   sterling,   at,   numbersign ]	};
+    key <AC09>  { [                l,                L,          dead_stroke , bar] };
     key <AE05>	{ [ parenleft,      5,      braceleft,      bracketleft     ]	};
+     key <AB06>	{ [         n,          N,            asciitilde,            N ]	};
     key <AE11>	{ [parenright,     degree,    braceright, bracketright ]	};
     key <AB09>	{ [     colon,      slash, division,   backslash ]	};
     key <LCTL>  { [ Meta_L                                                 ] };
