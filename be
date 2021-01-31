@@ -237,6 +237,7 @@ partial alphanumeric_keys
 	include "sun_vndr/be(sun_type6)"
 };
 
+### ADDED PART, IF YOU WANT TO APPEND, COPY PASTE EVERYTHING BELOW.
 
 partial alphanumeric_keys
 xkb_symbols "applemagic" {
@@ -244,7 +245,8 @@ xkb_symbols "applemagic" {
     include "be(basic)"
     name[Group1]="Belgisch (Apple Magic Keyboard)";
 
-    key <TLDE> { [ at,      numbersign    ]	};
+    key <LSGT> { [ at,      numbersign    ]	};
+    key <TLDE> { [ less,      greater    ]	};
     key <AE05>	{ [ parenleft,      5,      braceleft,      bracketleft     ]	};
     key <AE11>	{ [parenright,     degree,    braceright, bracketright ]	};
     key <AB09>	{ [     colon,      slash, division,   backslash ]	};
