@@ -16,6 +16,12 @@ Add new variant to evdev.xml
         <description>Belgian (Apple magic keyboard)</description>
       </configItem>
     </variant>
+    <variant>
+      <configItem>
+        <name>macbookpro</name>
+        <description>Belgian (Apple macbook pro)</description>
+      </configItem>
+    </variant>
         
 
 Append bottom part from BE file (below commented line) to /usr/share/X11/xkb/symbols/be

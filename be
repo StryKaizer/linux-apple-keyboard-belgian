@@ -245,8 +245,8 @@ xkb_symbols "applemagic" {
     include "be(basic)"
     name[Group1]="Belgisch (Apple Magic Keyboard)";
 
-    key <LSGT> { [ at,      numbersign    ]	};
-    key <TLDE> { [ less,      greater    ]	};
+    key <TLDE> { [ at,      numbersign    ]	};
+    key <LSGT> { [ less,      greater    ]	};
     key <BKSL>	{ [ egrave,   sterling,   at,   numbersign ]	};
     key <AC09>  { [                l,                L,          dead_stroke , bar] };
     key <AE05>	{ [ parenleft,      5,      braceleft,      bracketleft     ]	};
@@ -262,4 +262,12 @@ xkb_symbols "applemagic" {
       symbols[Group1] = [ ISO_Level3_Shift ]
     };
     include "level3(modifier_mapping)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "macbookpro" {
+    include "be(applemagic)"
+    name[Group1]="Belgisch (Apple Macbook Pro)";
+    key <LSGT> { [ at,      numbersign    ]	};
+    key <TLDE> { [ less,      greater    ]	};
 };
